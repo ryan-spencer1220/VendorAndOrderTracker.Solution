@@ -1,12 +1,13 @@
-# PROJECT NAME
+# Pierre's Vendor/Order Tracker
 
-#### PROJECT DESCRIPTION
+#### Web application designed to catalog vendors and orders for a ficticious bakery
 
 #### By Ryan Spencer
 
 ## Technologies Used
 
 - _C#_
+- _.NET_
 - _Git_
 - _Github_
 - _MSTest_
@@ -14,13 +15,15 @@
 
 ## Description
 
+This application was designed to demonstate proficiency with "objects within objects" using ASP.NET MVC architecture. Users are greeted with a splash page directing to either a "Add new vendors page" or "View vendors" page. Users can add new vendors and also add specific orders attached to a particular vendor.
+
 ## Setup/Installation Requirements
 
 **Cloning**
 
-1. In order to utilize this page on your local machine, you will need to clone a copy of this repository using the "$ git clone {url}" command in your coding terminal.
+1. In order to utilize this page on your local machine, you will need to clone a copy of this repository using the "$ git clone https://github.com/ryan-spencer1220/VendorOrderTracker.Solution" command in your coding terminal.
 
-2. Navigate to your desired directory in your command terminal and run "$ git clone REPO URL"
+2. Navigate to your desired directory in your command terminal and run "$ git clone https://github.com/ryan-spencer1220/VendorOrderTracker.Solution"
 
 3. Should you wish to edit the code you cloned, you will need coding software. VS Code is an example of a free code editor, which can be downloaded at https://code.visualstudio.com/_.
 
