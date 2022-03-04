@@ -12,14 +12,16 @@ namespace VendorOrderTracker.Tests
     {
       Vendor.ClearAll();
     }
+
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
       Vendor newVendor = new Vendor("Name", "Description", 555);
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
+
     [TestMethod]
-    public void GetName_ReturnsName_String()
+    public void GetVendorInformation_ReturnsVendorInformation_String()
     {
     string name = "Vendor Name";
     string description = "Description";
@@ -28,6 +30,7 @@ namespace VendorOrderTracker.Tests
     string result = newVendor.Name;
     Assert.AreEqual(name, result);
     }
+
     [TestMethod]
     public void GetId_ReturnsVendorId_int()
     {
@@ -38,6 +41,7 @@ namespace VendorOrderTracker.Tests
       int result = newVendor.Id;
       Assert.AreEqual(1, result);
     }
+
     [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
@@ -47,6 +51,7 @@ namespace VendorOrderTracker.Tests
       List<Vendor> result = Vendor.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+    
     [TestMethod]
     public void Find_ReturnsCorrectVendor_Vendor()
     {

@@ -20,5 +20,16 @@ namespace VendorOrderTracker.Tests
       Order newOrder = new Order(001, "Baguette Order", "$40.00");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+
+    [TestMethod]
+    public void GetInvoiceNumber_ReturnsInvoiceNumber_Int()
+    {
+      int invoiceNumber = 001;
+      string description = "Baguette Order";
+      string total = "$40.00";
+      Order newOrder = new Order(invoiceNumber, description, total);
+      int result = newOrder.InvoiceNumber;
+      Assert.AreEqual(invoiceNumber, result);
+    }
   }
 }
