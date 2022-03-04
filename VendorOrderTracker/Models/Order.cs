@@ -7,7 +7,6 @@ namespace VendorOrderTracker.Models
         public int InvoiceNumber { get; set; }
         public string Description { get; set; }
         public string Total { get; set; }
-
         public int Id { get; }
         private static List<Order> _instances = new List<Order> { };
 

@@ -88,6 +88,20 @@ namespace VendorOrderTracker.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
-    
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      int invoiceNumber01 = 009;
+      int invoiceNumber02 = 007;
+      string description01 = "Croissant Order";
+      string description02 = "Baguette Order";
+      string total01 = "$50.00";
+      string total02 = "$25.00";
+      Order newOrder1 = new Order(invoiceNumber01, description01, total01);
+      Order newOrder2 = new Order(invoiceNumber02, description02, total02);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
