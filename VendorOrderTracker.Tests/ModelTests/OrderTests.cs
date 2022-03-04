@@ -103,5 +103,16 @@ namespace VendorOrderTracker.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      int invoiceNumber = 001;
+      string description = "Baguette Order";
+      string total = "$40.00";
+      Order newOrder = new Order(invoiceNumber, description, total);
+      int result = newOrder.Id;
+      Assert.AreEqual(1, result);
+    }
   }
 }
