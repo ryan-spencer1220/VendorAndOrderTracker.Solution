@@ -66,5 +66,18 @@ namespace VendorOrderTracker.Tests
       int result = newOrder.InvoiceNumber;
       Assert.AreEqual(updatedInvoiceNumber, result);
     }
+
+    [TestMethod]
+    public void SetNewOrderDescription_SetOrderDescription_String()
+    {
+      int invoiceNumber = 001;
+      string description = "Baguette Order";
+      string total = "$40.00";
+      Order newOrder = new Order(invoiceNumber, description, total);
+      string updatedIDescription = "Baguette + Croissant Order";
+      newOrder.Description = updatedIDescription;
+      string result = newOrder.Description;
+      Assert.AreEqual(updatedIDescription, result);
+    }
   }
 }
