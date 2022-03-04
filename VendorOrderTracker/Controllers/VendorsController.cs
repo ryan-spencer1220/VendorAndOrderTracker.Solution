@@ -36,7 +36,7 @@ namespace VendorOrderTracker.Controllers
       List<Order> vendorOrders = selectedVendor.Orders;
       model.Add("vendor", selectedVendor);
       model.Add("orders", vendorOrders);
-      return View(model);
+      return View("Vendor", vendor);
     }
 
     [HttpPost("/vendors/{VendorId}/Orders")]
