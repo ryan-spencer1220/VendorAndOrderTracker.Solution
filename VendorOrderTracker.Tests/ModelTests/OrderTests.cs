@@ -53,5 +53,18 @@ namespace VendorOrderTracker.Tests
       string result = newOrder.Total;
       Assert.AreEqual(total, result);
     }
+
+    [TestMethod]
+    public void SetNewInvoiceNumber_SetInvoiceNumber_Int()
+    {
+      int invoiceNumber = 001;
+      string description = "Baguette Order";
+      string total = "$40.00";
+      Order newOrder = new Order(invoiceNumber, description, total);
+      int updatedInvoiceNumber = 004;
+      newOrder.InvoiceNumber = updatedInvoiceNumber;
+      int result = newOrder.InvoiceNumber;
+      Assert.AreEqual(updatedInvoiceNumber, result);
+    }
   }
 }
