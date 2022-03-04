@@ -36,7 +36,7 @@ namespace VendorOrderTracker.Tests
       int phoneNumber = 555-555-5555;
       Vendor newVendor = new Vendor(name, description, phoneNumber);
       int result = newVendor.Id;
-      Assert.AreEqual(2, result);
+      Assert.AreEqual(1, result);
     }
   }
 }
