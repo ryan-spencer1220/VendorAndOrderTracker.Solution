@@ -126,7 +126,7 @@ namespace VendorOrderTracker.Tests
       string total02 = "$25.00";
       Order newOrder1 = new Order(invoiceNumber01, description01, total01);
       Order newOrder2 = new Order(invoiceNumber02, description02, total02);
-      Order result = Order.Find(10000);
+      Order result = Order.Find(2);
       Assert.AreEqual(newOrder2, result);
     }
   }
