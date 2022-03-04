@@ -114,5 +114,20 @@ namespace VendorOrderTracker.Tests
       int result = newOrder.Id;
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      int invoiceNumber01 = 009;
+      int invoiceNumber02 = 007;
+      string description01 = "Croissant Order";
+      string description02 = "Baguette Order";
+      string total01 = "$50.00";
+      string total02 = "$25.00";
+      Order newOrder1 = new Order(invoiceNumber01, description01, total01);
+      Order newOrder2 = new Order(invoiceNumber02, description02, total02);
+      Order result = Order.Find(10000);
+      Assert.AreEqual(newOrder2, result);
+    }
   }
 }
