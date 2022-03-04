@@ -53,7 +53,7 @@ namespace VendorOrderTracker.Tests
       Vendor newVendor1 = new Vendor("Name1", "Description1", 444-444-4444);
       Vendor newVendor2 = new Vendor("Name2", "Description2", 555-555-5555);
       Vendor result = Vendor.Find(1);
-      Assert.AreEqual(newVendor2, result);
+      Assert.AreEqual(newVendor1, result);
     }
   }
 }
