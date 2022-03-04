@@ -1,0 +1,41 @@
+div#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: #ccc;
+  background: #333;
+  padding: 8px;
+}
+
+#name {
+  display: inline-block; /* add this line */
+  background-image: url(http://lorempixel.com/400/200/sports/1/);
+  height: 51px;
+  width: 285px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+#name:hover {
+  background-image: url(http://lorempixel.com/400/200/sports/2/);
+  height: 51px;
+  width: 285px;
+  margin: auto;
+  margin-bottom: 5px;
+  cursor: pointer;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+#name {
+  border: solid 1px red;
+  background-color: orange;
+  z-index: 999;
+}
+
+* {
+  background-color: turquoise;
+}
