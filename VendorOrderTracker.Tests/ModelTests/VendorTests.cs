@@ -43,6 +43,17 @@ namespace VendorOrderTracker.Tests
     }
 
     [TestMethod]
+    public void GetVendorPhoneNumber_ReturnsVendorPhoneNumber_Int()
+    {
+    string name = "Vendor Name";
+    string description = "Description";
+    int phoneNumber = 555-555-5555;
+    Vendor newVendor = new Vendor(name, description, phoneNumber);
+    int result = newVendor.PhoneNumber;
+    Assert.AreEqual(phoneNumber, result);
+    }
+
+    [TestMethod]
     public void GetId_ReturnsVendorId_int()
     {
       string name = "Vendor Name";
