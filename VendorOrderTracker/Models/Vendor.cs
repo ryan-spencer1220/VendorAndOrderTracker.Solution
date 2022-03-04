@@ -10,7 +10,7 @@ namespace VendorOrderTracker.Models
     public int PhoneNumber { get; set; }
 
     public int Id { get;}
-    // public List<Order> Orders { get; set; }
+    public List<Order> Orders { get; set; }
 
     public Vendor(string vendorName, string description, int phoneNumber)
     {
@@ -19,7 +19,7 @@ namespace VendorOrderTracker.Models
       PhoneNumber = phoneNumber;
       _instances.Add(this);
       Id = _instances.Count;
-      // Orders = new List<Order>{};
+      Orders = new List<Order>{};
     }
 
     public static void ClearAll()
@@ -35,9 +35,9 @@ namespace VendorOrderTracker.Models
       return _instances[searchId -1];
     }
 
-    // public void AddItem(Order order)
-    // {
-    //   Orders.Add order);
-    // }
+    public void AddOrder(Order order)
+    {
+      Orders.Add(order);
+    }
   }
 }
