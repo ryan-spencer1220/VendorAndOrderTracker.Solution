@@ -2,13 +2,16 @@
   Layout = "_Layout";
 }
 
-<h1>Order Details: </h1>
+<h1>Order Details </h1>
 
-<h3>Invoice Number: @Model["order"].Title</h3>
-<h3>Description: @Model["order"].Description</h3>
-<h3>Total: @Model["order"].Total</h3>
-<h3>Total: @Model["order"].Date</h3>
-<h3>Vendor: @Model["vendor"].Name</h3>
+  <div class="card bg-light mb-3">
+      <div class="card-body">
+        <h3>Title: @Model["order"].Title</h3>
+        <h3>Description: @Model["order"].Description</h3>
+        <h3>Total: @Model["order"].Total</h3>
+        <h3>Date: @Model["order"].Date</h3>
+        <h3>Vendor: @Model["vendor"].Name</h3>
+      </div>
+  </div>
 
-<a href='/vendors/@Model["vendor"].Id/orders/new'>Add Order</a>
-<a href='/vendors'>View All Vendors</a>
+<a href='/vendors/@Model["vendor"].Id/orders/new' class="btn btn-primary">Add Order</a>

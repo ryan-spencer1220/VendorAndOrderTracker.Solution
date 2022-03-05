@@ -6,13 +6,38 @@
 
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-  <label for="orderTitle">Title:</label>
-  <input id="orderTitle" name="orderTitle" type="number">
-  <label for="orderDescription">Description:</label>
-  <input id="orderDescription" name="orderDescription" type="text">  
-  <label for="orderTotal">Total</label>
-  <input id="orderTotal" name="orderTotal" type="text">
-  <label for="orderDate">Date</label>
-  <input id="orderDate" name="orderDate" type="date">
-  <button type='submit'>Add</button>
+
+  <div class="form-group row">
+    <label for="orderTitle">Order Title:</label>
+    <div class="col-sm-10">
+      <input id="orderTitle" name="orderTitle" type="text" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="orderDescription">Order Description:</label>
+    <div class="col-sm-10">
+      <input id="orderDescription" name="orderDescription" type="text" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="orderTotal">Order Total:</label>
+    <div class="col-sm-10">
+      <input id="orderTotal" name="orderTotal" type="text" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="orderDate">Order Date:</label>
+    <div class="col-sm-10">
+      <input id="orderDate" name="orderDate" type="date" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button class="btn btn-primary" type='submit'>Add</button>
+    </div>
+  </div>
 </form>

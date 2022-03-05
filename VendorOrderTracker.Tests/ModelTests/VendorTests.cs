@@ -16,7 +16,7 @@ namespace VendorOrderTracker.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Vendor newVendor = new Vendor("Name", "Description", 555);
+      Vendor newVendor = new Vendor("Name", "Description", "555-555-5555");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
@@ -25,7 +25,7 @@ namespace VendorOrderTracker.Tests
     {
     string name = "Vendor Name";
     string description = "Description";
-    int phoneNumber = 555-555-5555;
+    string phoneNumber = "555-555-5555";
     Vendor newVendor = new Vendor(name, description, phoneNumber);
     string result = newVendor.Name;
     Assert.AreEqual(name, result);
@@ -36,7 +36,7 @@ namespace VendorOrderTracker.Tests
     {
     string name = "Vendor Name";
     string description = "Description";
-    int phoneNumber = 555-555-5555;
+    string phoneNumber = "555-555-5555";
     Vendor newVendor = new Vendor(name, description, phoneNumber);
     string result = newVendor.Description;
     Assert.AreEqual(description, result);
@@ -47,9 +47,9 @@ namespace VendorOrderTracker.Tests
     {
     string name = "Vendor Name";
     string description = "Description";
-    int phoneNumber = 555-555-5555;
+    string phoneNumber = "555-555-5555";
     Vendor newVendor = new Vendor(name, description, phoneNumber);
-    int result = newVendor.PhoneNumber;
+    string result = newVendor.PhoneNumber;
     Assert.AreEqual(phoneNumber, result);
     }
 
@@ -58,7 +58,7 @@ namespace VendorOrderTracker.Tests
     {
       string name = "Vendor Name";
       string description = "Description";
-      int phoneNumber = 555-555-5555;
+      string phoneNumber = "555-555-5555";
       Vendor newVendor = new Vendor(name, description, phoneNumber);
       int result = newVendor.Id;
       Assert.AreEqual(1, result);
@@ -67,8 +67,8 @@ namespace VendorOrderTracker.Tests
     [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
-      Vendor newVendor1 = new Vendor("Name1", "Description1", 444-444-4444);
-      Vendor newVendor2 = new Vendor("Name2", "Description2", 555-555-5555);
+      Vendor newVendor1 = new Vendor("Name1", "Description1", "444-444-4444");
+      Vendor newVendor2 = new Vendor("Name2", "Description2", "555-555-5555");
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
       List<Vendor> result = Vendor.GetAll();
       CollectionAssert.AreEqual(newList, result);
@@ -77,8 +77,8 @@ namespace VendorOrderTracker.Tests
     [TestMethod]
     public void Find_ReturnsCorrectVendor_Vendor()
     {
-      Vendor newVendor1 = new Vendor("Name1", "Description1", 444-444-4444);
-      Vendor newVendor2 = new Vendor("Name2", "Description2", 555-555-5555);
+      Vendor newVendor1 = new Vendor("Name1", "Description1", "444-444-4444");
+      Vendor newVendor2 = new Vendor("Name2", "Description2", "555-555-5555");
       Vendor result = Vendor.Find(1);
       Assert.AreEqual(newVendor1, result);
     }
@@ -88,7 +88,7 @@ namespace VendorOrderTracker.Tests
     {
       Order newOrder = new Order("Baguette Order", "4 Plain Baguettes & 3 Seeded Baguettes", "$40.00", "3/15/21");
       List<Order> newList = new List<Order> { newOrder };
-      Vendor newVendor = new Vendor("Name1", "Description1", 444-444-4444);
+      Vendor newVendor = new Vendor("Name1", "Description1", "444-444-4444");
       newVendor.AddOrder(newOrder);
       List<Order> result = newVendor.Orders;
       CollectionAssert.AreEqual(newList, result);
