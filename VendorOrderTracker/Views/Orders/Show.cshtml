@@ -4,9 +4,10 @@
 
 <h1>Order Details: </h1>
 
-<h3>Invoice Number: @Model["order"].InvoiceNumber</h3>
+<h3>Invoice Number: @Model["order"].Title</h3>
 <h3>Description: @Model["order"].Description</h3>
 <h3>Total: @Model["order"].Total</h3>
+<h3>Total: @Model["order"].Date</h3>
 <h3>Vendor: @Model["vendor"].Name</h3>
 
 <a href='/vendors/@Model["vendor"].Id/orders/new'>Add Order</a>
