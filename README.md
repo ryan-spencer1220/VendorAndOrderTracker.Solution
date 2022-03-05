@@ -16,6 +16,7 @@
 ## Description
 
 This application was designed to demonstate proficiency with "objects within objects" using ASP.NET MVC architecture. Users are greeted with a splash page directing to either a "Add new vendors page" or "View vendors" page. Users can add new vendors and also add specific orders attached to a particular vendor.
+<img width="1037" alt="Screen Shot 2022-03-05 at 2 02 09 PM" src="https://user-images.githubusercontent.com/86761275/156901263-3db1b155-aad6-4d59-a3a4-4f83d7e142db.png">
 
 ## Setup/Installation Requirements
 
