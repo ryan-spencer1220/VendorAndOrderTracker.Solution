@@ -66,7 +66,7 @@ namespace VendorOrderTracker.Tests
       string date = "5/15/20";
       Order newOrder = new Order(title, description, total, date);
       string result = newOrder.Date;
-      Assert.AreEqual(total, result);
+      Assert.AreEqual(date, result);
     }
 
     [TestMethod]
@@ -120,8 +120,8 @@ namespace VendorOrderTracker.Tests
       string date = "5/15/20";
       Order newOrder = new Order(title, description, total, date);
       string updatedOrderDate = "2/12/21";
-      newOrder.Total = updatedOrderDate;
-      string result = newOrder.Total;
+      newOrder.Date = updatedOrderDate;
+      string result = newOrder.Date;
       Assert.AreEqual(updatedOrderDate, result);
     }
 
