@@ -17,6 +17,8 @@
 
 This application was designed to demonstate proficiency with "objects within objects" using ASP.NET MVC architecture. Users are greeted with a splash page directing to either a "Add new vendors page" or "View vendors" page. Users can add new vendors and also add specific orders attached to a particular vendor.
 
+<img width="1037" alt="Screen Shot 2022-03-05 at 2 02 09 PM" src="https://user-images.githubusercontent.com/86761275/156901263-3db1b155-aad6-4d59-a3a4-4f83d7e142db.png">
+
 ## Setup/Installation Requirements
 
 **Cloning**
@@ -31,7 +33,7 @@ This application was designed to demonstate proficiency with "objects within obj
 
 **Downloading**
 
-1. In your browser, navigate to REPO URL, and click the green "Code" button, which will provide a drop down menu. Click on "Download ZIP" at the bottom of the menu, and save it to your desired location.
+1. In your browser, navigate to https://github.com/ryan-spencer1220/VendorOrderTracker.Solution/, and click the green "Code" button, which will provide a drop down menu. Click on "Download ZIP" at the bottom of the menu, and save it to your desired location.
 
 2. Once downloaded, unzip and extract the files.
 
@@ -39,7 +41,7 @@ This application was designed to demonstate proficiency with "objects within obj
 
 **Running the Project**
 
-1. While located in the root directory, navigate to the PROJECT FILE directory.
+1. While located in the root directory, navigate to the VendorOrderTracker directory.
 
 2. In your terminal run the command _dotnet restore_ to add the required dependencies and tools for this project.
 
@@ -47,7 +49,7 @@ This application was designed to demonstate proficiency with "objects within obj
 
 **Testing the Project**
 
-1. While located in the root directory navigate to the PROJECT FILE.TESTS directory.
+1. While located in the root directory navigate to the VendorOrderTracker.Tests directory.
 
 2. In your terminal run the command _dotnet restore_ to add the required dependencies and tools for this project.
 
